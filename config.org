@@ -657,3 +657,6 @@ I use meghanada to provide very neat autocompletion when editing Java files. I u
     (setq meghanada-java-path "java")
     (setq meghanada-maven-path "mvn"))
 #+END_SRC
+
+* My own configs
+(set-face-attribute 'default nil :height 140)

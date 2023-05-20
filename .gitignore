@@ -1,0 +1,12 @@
+.cache/
+.last-package-update-day
+.org-id-locations
+auto-save-list/
+bookmarks
+elpa/
+games/
+ido.last
+org-roam.db
+places
+recentf
+transient/
