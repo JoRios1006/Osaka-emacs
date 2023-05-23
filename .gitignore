@@ -10,3 +10,8 @@ org-roam.db
 places
 recentf
 transient/
+.mc-lists.el
+eshell/
+projectile-bookmarks.eld
+tldr/
+
