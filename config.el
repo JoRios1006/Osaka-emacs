@@ -19,6 +19,24 @@
 	  (display-line-numbers-mode)))
 (global-set-key (kbd "C-c C-l") 'toggle-line-numbers-type)
 
+;; Scheme!
+(use-package paredit
+  :ensure t)
+(use-package geiser
+  :ensure t)
+(use-package geiser-guile
+  :ensure t)
+
+;; Update repo
+(defun update-packages ()
+  "Update all packages."
+  (interactive)
+  (package-refresh-contents)
+  (package-list-packages)
+  (package-menu-mark-upgrades)
+  (package-menu-execute t))
+(global-set-key (kbd "C-c u") 'update-packages)
+
 
 ;; Recent Files
 (recentf-mode 1)
@@ -263,28 +281,6 @@
 
 (use-package diminish
   :ensure t)
-
-;(defmacro diminish-built-in (&rest modes)
-;  "Accepts a list MODES of built-in emacs modes and generates `with-eval-after-load` diminish forms based on the file implementing the mode functionality for each mode."
-;  (declare (indent defun))
-;  (let* ((get-file-names (lambda (pkg) (file-name-base (symbol-file pkg))))
-;	 (diminish-files (mapcar get-file-names modes))
-;	 (zip-diminish   (-zip modes diminish-files)))
-;    `(progn
-;       ,@(cl-loop for (mode . file) in zip-diminish
-;		  collect `(with-eval-after-load ,file
-;				 (diminish (quote ,mode)))))))
-; This bit goes in init.el
-;(diminish-built-in
-;  beacon-mode
-;  which-key-mode
-;  page-break-lines-mode
-;  undo-tree-mode
-;  eldoc-mode
-;  abbrev-mode
-;  irony-mode
-;  company-mode
-;  meghanada-mode)
 
 (use-package spaceline
   :ensure t)

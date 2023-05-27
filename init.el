@@ -122,11 +122,12 @@
 	 (tramp-connection-local-default-system-profile
 	  (path-separator . ":")
 	  (null-device . "/dev/null"))))
- '(custom-enabled-themes '(Witchmacs))
+ '(custom-enabled-themes
+   '(sanityinc-tomorrow-bright sanityinc-solarized-dark Witchmacs))
  '(custom-safe-themes
-   '("4cf3221feff536e2b3385209e9b9dc4c2e0818a69a1cdb4b522756bcdf4e00a4" "4aee8551b53a43a883cb0b7f3255d6859d766b6c5e14bcb01bed572fcbef4328" "acb636fb88d15c6dd4432e7f197600a67a48fd35b54e82ea435d7cd52620c96d" default))
+   '("628278136f88aa1a151bb2d6c8a86bf2b7631fbea5f0f76cba2a0079cd910f7d" "06f0b439b62164c6f8f84fdda32b62fb50b6d00e8b01c2208e55543a6337433a" "1b8d67b43ff1723960eb5e0cba512a2c7a2ad544ddb2533a90101fd1852b426e" "82d2cac368ccdec2fcc7573f24c3f79654b78bf133096f9b40c20d97ec1d8016" "4cf3221feff536e2b3385209e9b9dc4c2e0818a69a1cdb4b522756bcdf4e00a4" "4aee8551b53a43a883cb0b7f3255d6859d766b6c5e14bcb01bed572fcbef4328" "acb636fb88d15c6dd4432e7f197600a67a48fd35b54e82ea435d7cd52620c96d" default))
  '(package-selected-packages
-   '(common-lisp-snippets sly sly-mode sunrise projectile tldr tldr.el multiple-cursors crux auctex centaur-tabs rainbow-delimiters rainbow-mode highlight-numbers org-roam color-theme-sanityinc-solarized meghanada company-irony company-c-headers yasnippet-snippets yasnippet company magit treemacs-icons-dired treemacs-evil treemacs undo-tree page-break-lines async ido-vertical-mode switch-window avy beacon evil swiper which-key dashboard spaceline diminish auto-package-update htmlize)))
+   '(geiser-guile 0blayout geiser paredit color-theme-sanityinc-tomorrow helm common-lisp-snippets sly sly-mode sunrise projectile tldr tldr.el multiple-cursors crux auctex centaur-tabs rainbow-delimiters rainbow-mode highlight-numbers org-roam color-theme-sanityinc-solarized meghanada company-irony company-c-headers yasnippet-snippets yasnippet company magit treemacs-icons-dired treemacs-evil treemacs undo-tree page-break-lines async ido-vertical-mode switch-window avy beacon evil swiper which-key dashboard spaceline diminish auto-package-update htmlize)))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
