@@ -297,12 +297,12 @@
   :defer nil
   :preface
   (defun update-config ()
-	"Update Witchmacs to the latest version."
+	"Update Osaka-emacs to the latest version."
 	(interactive)
 	(let ((dir (expand-file-name user-emacs-directory)))
 	  (if (file-exists-p dir)
 		  (progn
-			(message "Witchmacs is updating!")
+			(message "Osaka-emacs is updating!")
 			(cd dir)
 			(shell-command "git pull")
 			(message "Update finished. Switch to the messages buffer to see changes and then restart Emacs"))
@@ -316,8 +316,8 @@
   :config
   (dashboard-setup-startup-hook)
   (setq dashboard-items '((recents . 5)))
-  (setq dashboard-banner-logo-title "W I T C H M A C S - The cutest Emacs distribution!")
-  (setq dashboard-startup-banner "~/.emacs.d/marivector.png")
+  (setq dashboard-banner-logo-title "O S A K A E M A C S - The dumbest Emacs distribution!")
+  (setq dashboard-startup-banner "~/.emacs.d/osakavector.png")
   (setq dashboard-center-content t)
   (setq dashboard-show-shortcuts nil)
   (setq dashboard-set-init-info t)
@@ -328,18 +328,18 @@
   (setq dashboard-navigator-buttons
 		`(;; line1
 		  ((,nil
-			"Witchmacs on github"
-			"Open Witchmacs' github page on your browser"
-			(lambda (&rest _) (browse-url "https://github.com/snackon/witchmacs"))
+			"Osaka-emacs on github"
+			"Open Osaka-emacs' github page on your browser"
+			(lambda (&rest _) (browse-url "https://github.com/JoRios1006/Osaka-emacs"))
 			'default)
 		   (nil
-			"Witchmacs crash course"
-			"Open Witchmacs' introduction to Emacs"
-			(lambda (&rest _) (find-file "~/.emacs.d/Witcheat.org"))
+			"Osaka-emacs crash course"
+			"Open Osaka-emacs' introduction to Emacs"
+			(lambda (&rest _) (find-file "~/.emacs.d/cheatsheet.org"))
 			'default)
 		   (nil
-			"Update Witchmacs"
-			"Get the latest Witchmacs update. Check out the github commits for changes!"
+			"Update Osaka-emacs"
+			"Get the latest Osaka-emacs update. Check out the github commits for changes!"
 			(lambda (&rest _) (update-config))
 			'default)
 		   )
@@ -351,7 +351,7 @@
 			'default)
 		   (nil
 			"Open config.org"
-			"Open Witchmacs' configuration file for easy editing"
+			"Open Osaka-emacs' configuration file for easy editing"
 			(lambda (&rest _) (find-file "~/.emacs.d/config.org"))
 			'default)))))
 
