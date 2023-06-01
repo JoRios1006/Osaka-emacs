@@ -19,6 +19,18 @@
 	  (display-line-numbers-mode)))
 (global-set-key (kbd "C-c C-l") 'toggle-line-numbers-type)
 
+(defun toggle-org-support-shift-select ()
+  "Toggle the value of `org-support-shift-select'."
+  (interactive)
+  (setq org-support-shift-select (not org-support-shift-select))
+  (message "org-support-shift-select is now %s"
+           (if org-support-shift-select "enabled" "disabled")))
+
+(global-set-key (kbd "C-c n -") 'toggle-org-support-shift-select)
+
+;; Capitalize region
+(global-set-key (kbd "C-x c") 'capitalize-region)
+
 ;; Scheme!
 (use-package paredit
   :ensure t)
